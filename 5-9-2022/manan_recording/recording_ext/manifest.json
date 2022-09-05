@@ -1,0 +1,32 @@
+{
+  "name": "ad blocker",
+  "description": "Ad blocker extension ",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "permissions": ["activeTab", "tabs", "scripting", "storage"],
+  "action": {
+    "default_icon": {
+      "16": "recording.png",
+      "48": "recording.png",
+      "128": "recording.png"
+    },
+    "default_popup": "index.html"
+  },
+
+  "icons": {
+    "16": "recording.png",
+    "48": "recording.png",
+    "128": "recording.png"
+  },
+
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "css": ["my-styles.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>recording ext</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main_container">
+            <img src="logo (1).png" class="header_image" >
+            <p class="header_heading">Screen Recording</p>
+        </div>
+        <div class="sub_container">
+            <div class="sec_sub_container"  id="screen">
+                <img src="Vector.png" class="screen"  id="example1" >
+                <p class="sub_container_haeding">Capture From Screen</p>
+            </div>
+            <div class="sec_sub_container">
+                <img src="Camera.png" class="screen">
+                <p class="sub_container_haeding">Capture From Camera</p>
+            </div>
+            <div class="sec_sub_container_1">
+                <img src="screen.png" class="screen_1">
+                <p class="sub_container_haeding">Capture From Screen + Camera</p>
+            </div>
+        </div>
+
+        <!-- mic and start btn html -->
+        <div class="display_none" id="block">
+            <div class="mic_btn">
+                <img src="bi_mic.png" class="mic_image">
+                <span class="mic_heading">Mic Recording</span>
+                <input type="checkbox" id="switch" class="switch_toggle" /><label for="switch">Toggle</label>
+            </div>
+            <div class="btn_strt" id="btn_recording">
+                <button class="btn_record"> Start Recording </button>
+            </div>
+        </div>
+        <div>
+            <p class="footer_heading" id="footer"> Select any of the following options above to start recording.</p>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
